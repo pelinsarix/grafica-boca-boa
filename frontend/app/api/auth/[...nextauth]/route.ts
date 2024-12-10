@@ -17,7 +17,7 @@ const AuthOptions: NextAuthOptions = {
             },
 
             async authorize(credentials) {
-                const user = { id: 1, name: "Test User", email: "admin@example.com", password: "1", role: "admin" }
+                const user = { id: "1", name: "Test User", email: "admin@example.com", password: "1", role: "admin" }
 
                 const isValidEmail = (credentials?.email === user.email);
                 const isValidPassword = (credentials?.password === user.password);
